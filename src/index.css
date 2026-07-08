@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-fust-blue: #08142C;       /* Deep academic midnight blue */
+  --color-fust-blue-brand: #1C3B6F; /* FUST official blue */
+  --color-fust-burgundy: #801818;   /* FUST official burgundy/wine red */
+  --color-fust-gold: #B8934E;       /* Antique gold for lines and fine details */
+  --color-fust-gold-light: #E2D4B7; /* Champagne details */
+  --color-fust-cream: #FAFAF7;      /* Primary soft off-white/paper background */
+  --color-fust-slate: #526071;      /* Slate grey for high legibility body text */
+  --color-fust-dark-blue: #F0F1F4;  /* Soft light panel background */
+  --color-fust-deep: #050D1D;       /* Pure deep midnight blue for theatrical dark sections */
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 12px rgba(184, 147, 78, 0.15);
+  }
+  
+  .bg-academic-grid {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(184, 147, 78, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(184, 147, 78, 0.03) 1px, transparent 1px);
+  }
+
+  .bg-dot-pattern {
+    background-size: 24px 24px;
+    background-image: radial-gradient(rgba(184, 147, 78, 0.07) 1px, transparent 1px);
+  }
+  
+  /* Infinite Marquee Seamless Loop */
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+  
+  /* Scrollbar Customization for Sophisticated theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAFAF7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #B8934E;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9D7A39;
+  }
+}
+
+/* Base resets */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-fust-cream);
+  color: var(--color-fust-blue);
+  overflow-x: hidden;
+}

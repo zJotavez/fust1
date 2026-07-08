@@ -1,0 +1,6 @@
+{
+  "name": "Portal de Boas-Vindas FUST University",
+  "description": "Uma experiência digital premium e cerimonial de boas-vindas destinada aos novos alunos da Florida University of Science and Theology.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
