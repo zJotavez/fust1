@@ -53,53 +53,7 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
       gridClass: "col-span-2 md:col-span-12 row-span-2 md:row-span-2",
       cardClass: "text-white border border-fust-gold/40 p-4 sm:p-6 md:p-10 justify-between cursor-pointer",
       bgVideo: "/tutorial.mp4",
-    },
-    {
-      id: "growth",
-      title: {
-        pt: "Crescimento Intelectual",
-        en: "Intellectual Growth",
-        es: "Crecimiento Intelectual",
-      },
-      desc: {
-        pt: "Expandir horizontes de compreensão teórica e prática a cada etapa do processo acadêmico.",
-        en: "Expanding horizons of theoretical and practical understanding at every stage of the academic process.",
-        es: "Expandir horizontes de comprensión teórica y práctica en cada etapa del proceso académico.",
-      },
-      gridClass: "col-span-1 md:col-span-4 row-span-1",
-      cardClass: "bg-fust-blue text-white border border-fust-gold/30 p-4 sm:p-6 hover:bg-fust-blue/90 transition-all justify-between shadow-md",
-    },
-    {
-      id: "human-dev",
-      title: {
-        pt: "Desenvolvimento Humano",
-        en: "Human Development",
-        es: "Desarrollo Humano",
-      },
-      desc: {
-        pt: "Formar não apenas profissionais de excelência, mas cidadãos globais conscientes e compassivos.",
-        en: "Shaping not just excellent professionals, but conscious and compassionate global citizens.",
-        es: "Formar no solo profesionales excelentes, sino ciudadanos globales conscientes y compasivos.",
-      },
-      gridClass: "col-span-1 md:col-span-4 row-span-1",
-      cardClass: "text-white border border-white/10 p-4 sm:p-6 hover:border-fust-gold transition-all justify-between",
-      bgImage: "/card-graduates.png",
-    },
-    {
-      id: "social-impact",
-      title: {
-        pt: "Impacto Social",
-        en: "Social Impact",
-        es: "Impacto Social",
-      },
-      desc: {
-        pt: "Levar o conhecimento gerado nos campus para fazer a diferença real no mundo.",
-        en: "Taking the knowledge generated on campuses to make a real difference in the world.",
-        es: "Levar el conhecimento gerado no campus para marcar uma diferença real no mundo.",
-      },
-      gridClass: "col-span-2 md:col-span-4 row-span-1",
-      cardClass: "bg-fust-burgundy text-fust-gold-light border border-fust-gold/30 p-4 sm:p-6 hover:bg-fust-burgundy/90 transition-all justify-between shadow-md",
-    },
+    }
   ];
 
   const sectionTitle = {
