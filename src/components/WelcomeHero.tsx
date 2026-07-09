@@ -1,5 +1,6 @@
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Volume2, VolumeX } from "lucide-react";
 import { motion } from "motion/react";
+import { useState, useRef } from "react";
 import { LocaleContent } from "../data/welcome-content";
 
 interface WelcomeHeroProps {
@@ -8,6 +9,22 @@ interface WelcomeHeroProps {
 }
 
 export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps) {
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      const nextMuted = !isMuted;
+      setIsMuted(nextMuted);
+      videoRef.current.muted = nextMuted;
+      if (!nextMuted) {
+        // Restart video from beginning when unmuted to hear the full message
+        videoRef.current.currentTime = 0;
+        videoRef.current.play();
+      }
+    }
+  };
+
   return (
     <section className="relative w-full min-h-screen pt-28 pb-20 flex items-center overflow-hidden bg-fust-deep">
       {/* Background Video Player */}
@@ -109,13 +126,35 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
             {/* Elegant double-line offset border */}
             <div className="absolute -inset-3 border border-fust-gold/30 -z-10 translate-x-1.5 translate-y-1.5" />
             
-            {/* Image frame */}
-            <div className="relative aspect-[3/4] border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl">
-              <img
-                src="/home-hero-poster.jpg"
-                alt="Florida University of Science and Theology Admissions"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            {/* Video frame */}
+            <div 
+              className="relative aspect-[3/4] border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl cursor-pointer group"
+              onClick={handleVideoClick}
+            >
+              <video
+                ref={videoRef}
+                src="/pr-nilson.mp4"
+                autoPlay
+                loop
+                muted={isMuted}
+                playsInline
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
+              
+              {/* Overlay button to indicate click-to-listen */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                {isMuted ? (
+                  <div className="flex flex-col items-center bg-black/60 text-white px-4 py-2 rounded-full backdrop-blur-md shadow-lg transform group-hover:scale-110 transition-transform">
+                    <VolumeX className="w-5 h-5 mb-1 text-fust-gold" />
+                    <span className="text-[10px] font-bold tracking-wider uppercase">Clique para ouvir</span>
+                  </div>
+                ) : (
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center bg-black/60 text-white px-4 py-2 rounded-full backdrop-blur-md shadow-lg">
+                    <Volume2 className="w-5 h-5 mb-1 text-fust-gold" />
+                    <span className="text-[10px] font-bold tracking-wider uppercase">Mutar</span>
+                  </div>
+                )}
+              </div>
             </div>
             
             {/* Architectural caption */}
