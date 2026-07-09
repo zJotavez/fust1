@@ -70,4 +70,11 @@ body {
   background-color: var(--color-fust-cream);
   color: var(--color-fust-blue);
   overflow-x: hidden;
+  
+  /* Premium Native App Feel: Disable Text Selection & Context Menus */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
 }
