@@ -125,14 +125,14 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
             
             {/* Video frame */}
             <div 
-              className={`relative border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl cursor-pointer group ${isPlaying ? 'aspect-video' : 'aspect-[3/4] transition-all duration-500'}`}
+              className="relative aspect-[9/16] border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl cursor-pointer group"
               onClick={handleVideoClick}
             >
               <video
                 ref={videoRef}
                 src="/pr-nilson.mp4"
                 playsInline
-                className={`w-full h-full ${isPlaying ? 'object-contain' : 'object-cover group-hover:scale-105 transition-transform duration-700'}`}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 onEnded={() => setIsPlaying(false)}
               />
               
