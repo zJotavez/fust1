@@ -39,70 +39,6 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
 
   const puzzleItems: PuzzleItem[] = [
     {
-      id: "academic-knowledge",
-      title: {
-        pt: "Conhecimento Acadêmico",
-        en: "Academic Knowledge",
-        es: "Conocimiento Académico",
-      },
-      desc: {
-        pt: "A base intelectual da FUST une rigor científico e reflexão teológica para formar líderes preparados para o amanhã.",
-        en: "The intellectual foundation of FUST combines scientific rigor and theological reflection to shape leaders prepared for tomorrow.",
-        es: "La base intelectual de FUST une el rigor científico y la reflexión teológica formar líderes preparados para el mañana.",
-      },
-      gridClass: "col-span-2 md:col-span-6 row-span-2",
-      cardClass: "text-white border-l-4 border-fust-gold p-4 sm:p-6 md:p-10 justify-between",
-      bgImage: "/card-excellence.png",
-    },
-    {
-      id: "critical-thinking",
-      title: {
-        pt: "Pensamento Crítico",
-        en: "Critical Thinking",
-        es: "Pensamiento Crítico",
-      },
-      desc: {
-        pt: "Questionar, analisar e compreender profundamente as dinâmicas e os grandes desafios do mundo contemporâneo.",
-        en: "Question, analyze, and deeply understand the dynamics and great challenges of the contemporary world.",
-        es: "Cuestionar, analizar y comprender profundamente la dinámica y los grandes desafíos del mundo contemporáneo.",
-      },
-      gridClass: "col-span-2 md:col-span-6 row-span-1",
-      cardClass: "text-white border border-white/10 p-4 sm:p-6 hover:border-fust-gold transition-all justify-between",
-      bgImage: "/card-education.png",
-    },
-    {
-      id: "research",
-      title: {
-        pt: "Pesquisa",
-        en: "Research",
-        es: "Investigación",
-      },
-      desc: {
-        pt: "A busca ativa por respostas científicas e éticas que promovam o avanço social.",
-        en: "The active search for scientific and ethical answers that promote social progress.",
-        es: "La búsqueda activa de respuestas científicas y éticas que promuevan el avance social.",
-      },
-      gridClass: "col-span-1 md:col-span-3 row-span-1",
-      cardClass: "text-white border border-white/10 p-4 sm:p-6 hover:border-fust-gold transition-all justify-between",
-      bgImage: "/card-library.png",
-    },
-    {
-      id: "purpose",
-      title: {
-        pt: "Propósito",
-        en: "Purpose",
-        es: "Propósito",
-      },
-      desc: {
-        pt: "Unir a excelência do saber ao chamado existencial de transformação.",
-        en: "Uniting the excellence of knowledge with the existential calling of transformation.",
-        es: "Unir la excelencia del saber al llamado existencial de transformación.",
-      },
-      gridClass: "col-span-1 md:col-span-3 row-span-1",
-      cardClass: "text-white border border-white/10 p-4 sm:p-6 hover:border-fust-gold transition-all justify-between",
-      bgImage: "/card-routine.png",
-    },
-    {
       id: "portal-tutorial",
       title: {
         pt: "Portal do Aluno",
@@ -114,7 +50,7 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
         en: "Access tutorial to the academic environment.",
         es: "Tutorial de acceso al entorno académico.",
       },
-      gridClass: "col-span-2 md:col-span-6 row-span-2",
+      gridClass: "col-span-2 md:col-span-12 row-span-2 md:row-span-2",
       cardClass: "text-white border border-fust-gold/40 p-4 sm:p-6 md:p-10 justify-between cursor-pointer",
       bgVideo: "/tutorial.mp4",
     },
@@ -130,7 +66,7 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
         en: "Expanding horizons of theoretical and practical understanding at every stage of the academic process.",
         es: "Expandir horizontes de comprensión teórica y práctica en cada etapa del proceso académico.",
       },
-      gridClass: "col-span-1 md:col-span-3 row-span-1",
+      gridClass: "col-span-1 md:col-span-4 row-span-1",
       cardClass: "bg-fust-blue text-white border border-fust-gold/30 p-4 sm:p-6 hover:bg-fust-blue/90 transition-all justify-between shadow-md",
     },
     {
@@ -145,7 +81,7 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
         en: "Shaping not just excellent professionals, but conscious and compassionate global citizens.",
         es: "Formar no solo profesionales excelentes, sino ciudadanos globales conscientes y compasivos.",
       },
-      gridClass: "col-span-1 md:col-span-3 row-span-1",
+      gridClass: "col-span-1 md:col-span-4 row-span-1",
       cardClass: "text-white border border-white/10 p-4 sm:p-6 hover:border-fust-gold transition-all justify-between",
       bgImage: "/card-graduates.png",
     },
@@ -161,7 +97,7 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
         en: "Taking the knowledge generated on campuses to make a real difference in the world.",
         es: "Levar el conhecimento gerado no campus para marcar uma diferença real no mundo.",
       },
-      gridClass: "col-span-2 md:col-span-6 row-span-1",
+      gridClass: "col-span-2 md:col-span-4 row-span-1",
       cardClass: "bg-fust-burgundy text-fust-gold-light border border-fust-gold/30 p-4 sm:p-6 hover:bg-fust-burgundy/90 transition-all justify-between shadow-md",
     },
   ];

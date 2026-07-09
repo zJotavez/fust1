@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronDown, Volume2, VolumeX } from "lucide-react";
+import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, useRef } from "react";
 import { LocaleContent } from "../data/welcome-content";
@@ -9,19 +9,16 @@ interface WelcomeHeroProps {
 }
 
 export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps) {
-  const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleVideoClick = () => {
+    if (isPlaying) return; // Native controls handle it once playing
     if (videoRef.current) {
-      const nextMuted = !isMuted;
-      setIsMuted(nextMuted);
-      videoRef.current.muted = nextMuted;
-      if (!nextMuted) {
-        // Restart video from beginning when unmuted to hear the full message
-        videoRef.current.currentTime = 0;
-        videoRef.current.play();
-      }
+      setIsPlaying(true);
+      videoRef.current.controls = true;
+      videoRef.current.muted = false;
+      videoRef.current.play();
     }
   };
 
@@ -128,33 +125,26 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
             
             {/* Video frame */}
             <div 
-              className="relative aspect-[3/4] border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl cursor-pointer group"
+              className={`relative border border-fust-gold/45 bg-fust-deep overflow-hidden shadow-2xl cursor-pointer group ${isPlaying ? 'aspect-video' : 'aspect-[3/4] transition-all duration-500'}`}
               onClick={handleVideoClick}
             >
               <video
                 ref={videoRef}
                 src="/pr-nilson.mp4"
-                autoPlay
-                loop
-                muted={isMuted}
                 playsInline
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className={`w-full h-full ${isPlaying ? 'object-contain' : 'object-cover group-hover:scale-105 transition-transform duration-700'}`}
+                onEnded={() => setIsPlaying(false)}
               />
               
-              {/* Overlay button to indicate click-to-listen */}
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-                {isMuted ? (
-                  <div className="flex flex-col items-center bg-black/60 text-white px-4 py-2 rounded-full backdrop-blur-md shadow-lg transform group-hover:scale-110 transition-transform">
-                    <VolumeX className="w-5 h-5 mb-1 text-fust-gold" />
-                    <span className="text-[10px] font-bold tracking-wider uppercase">Clique para ouvir</span>
+              {/* Overlay button to indicate click-to-play */}
+              {!isPlaying && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                  <div className="flex flex-col items-center bg-fust-gold text-fust-deep px-6 py-3 rounded-full backdrop-blur-md shadow-xl transform group-hover:scale-110 transition-transform">
+                    <Play className="w-5 h-5 mb-1" fill="currentColor" />
+                    <span className="text-[10px] font-bold tracking-wider uppercase">Assistir</span>
                   </div>
-                ) : (
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center bg-black/60 text-white px-4 py-2 rounded-full backdrop-blur-md shadow-lg">
-                    <Volume2 className="w-5 h-5 mb-1 text-fust-gold" />
-                    <span className="text-[10px] font-bold tracking-wider uppercase">Mutar</span>
-                  </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
             
             {/* Architectural caption */}
