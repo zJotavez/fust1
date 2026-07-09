@@ -18,6 +18,7 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
       setIsPlaying(true);
       videoRef.current.controls = true;
       videoRef.current.muted = false;
+      videoRef.current.currentTime = 0; // Restart with audio
       videoRef.current.play();
     }
   };
@@ -132,6 +133,9 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
                 ref={videoRef}
                 src="/pr-nilson.mp4"
                 playsInline
+                autoPlay
+                muted
+                loop
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 onEnded={() => setIsPlaying(false)}
               />
@@ -141,7 +145,7 @@ export default function WelcomeHero({ content, onNextSection }: WelcomeHeroProps
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                   <div className="flex flex-col items-center bg-fust-gold text-fust-deep px-6 py-3 rounded-full backdrop-blur-md shadow-xl transform group-hover:scale-110 transition-transform">
                     <Play className="w-5 h-5 mb-1" fill="currentColor" />
-                    <span className="text-[10px] font-bold tracking-wider uppercase">Assistir</span>
+                    <span className="text-[10px] font-bold tracking-wider uppercase">Ouvir</span>
                   </div>
                 </div>
               )}
