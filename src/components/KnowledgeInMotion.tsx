@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { useState, useRef } from "react";
-import { Volume2, VolumeX } from "lucide-react";
+import React, { useState, useRef } from "react";
+import { Volume2, VolumeX, Play } from "lucide-react";
 
 interface KnowledgeInMotionProps {
   currentLang: "pt" | "en" | "es";
