@@ -104,8 +104,8 @@ export default function JourneyIntroduction({ content }: JourneyIntroductionProp
             <div className="absolute -inset-2 border border-fust-gold/20 -z-10 translate-x-1.5 translate-y-1.5" />
             <div className="relative aspect-[4/5] border border-fust-gold/30 bg-white overflow-hidden shadow-xl">
               <img
-                src="/home-map.png"
-                alt="Academic research and workspace"
+                src="/logo-crest.png"
+                alt="FUST Logo"
                 className="w-full h-full object-cover filter brightness-[0.98] contrast-101 select-none"
               />
               <div className="absolute inset-0 bg-fust-blue/5 mix-blend-multiply pointer-events-none" />
