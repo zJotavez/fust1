@@ -84,11 +84,11 @@ export interface LocaleContent {
 export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
   pt: {
     header: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       experience: "CERIMÔNIA DE BOAS-VINDAS",
     },
     hero: {
-      eyebrow: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      eyebrow: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       title: "Seu próximo capítulo começa aqui.",
       subtitle: "Hoje você inicia mais do que uma nova etapa acadêmica. Inicia uma jornada de conhecimento, propósito e transformação.",
       button: "Começar minha jornada",
@@ -133,7 +133,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
     },
     envelope: {
       label: "Uma mensagem para você",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
       clickToOpen: "Clique para abrir",
       loading: "Abrindo envelope...",
       audioToggle: "Ativar experiência sonora",
@@ -141,11 +141,11 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       audioOff: "Áudio: Desligado",
     },
     letter: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       salutationDefault: "Caro(a) estudante,",
       salutationPersonalized: (name: string) => `Caro(a) ${name},`,
       paragraphs: [
-        "É com grande alegria que damos as boas-vindas a você na Florida University of Science and Theology.",
+        "É com grande alegria que damos as boas-vindas a você na France University of Science and Theology.",
         "Hoje marca o início de uma nova jornada em sua vida acadêmica e pessoal. Ao ingressar na FUST, você passa a fazer parte de uma comunidade internacional dedicada ao conhecimento, à reflexão e à transformação do mundo por meio da educação.",
         "Nossa universidade nasceu com um propósito claro: unir ciência, fé e sabedoria para formar líderes preparados para enfrentar os desafios da sociedade moderna.",
         "Aqui, você encontrará mais do que cursos e disciplinas. Encontrará um ambiente de crescimento, diálogo e descoberta, onde cada estudante é encorajado a desenvolver seu potencial intelectual, espiritual e humano.",
@@ -153,7 +153,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
         "Que este seja apenas o primeiro capítulo de uma história extraordinária.",
       ],
       welcomePhrase: "Seja muito bem-vindo(a) à FUST.",
-      signatureTitle: "Florida University of Science and Theology",
+      signatureTitle: "France University of Science and Theology",
       signees: [
         { name: "Dr. Arthur Pendelton", role: "Presidente" },
         { name: "Dra. Clarice Vance", role: "Reitora Acadêmica" },
@@ -201,10 +201,10 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       title: "Grandes jornadas começam com um primeiro passo.",
       subtitle: "Hoje, esse passo foi dado.",
       welcomePhrase: "Bem-vindo(a) à FUST.",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
     },
     footer: {
-      allRightsReserved: "© 2026 Florida University of Science and Theology. Todos os direitos reservados.",
+      allRightsReserved: "© 2026 France University of Science and Theology. Todos os direitos reservados.",
       officialWebsite: "Website Oficial",
       privacyPolicy: "Política de Privacidade",
       contact: "Contato de Suporte",
@@ -212,11 +212,11 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
   },
   en: {
     header: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       experience: "WELCOME CEREMONY",
     },
     hero: {
-      eyebrow: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      eyebrow: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       title: "Your next chapter begins here.",
       subtitle: "Today you begin more than a new academic stage. You start a journey of knowledge, purpose, and transformation.",
       button: "Begin my journey",
@@ -261,7 +261,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
     },
     envelope: {
       label: "A message for you",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
       clickToOpen: "Click to open",
       loading: "Opening envelope...",
       audioToggle: "Enable sound experience",
@@ -269,11 +269,11 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       audioOff: "Audio: Off",
     },
     letter: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       salutationDefault: "Dear student,",
       salutationPersonalized: (name: string) => `Dear ${name},`,
       paragraphs: [
-        "It is with great joy that we welcome you to the Florida University of Science and Theology.",
+        "It is with great joy that we welcome you to the France University of Science and Theology.",
         "Today marks the beginning of a new journey in your academic and personal life. By joining FUST, you become part of an international community dedicated to knowledge, reflection, and the transformation of the world through education.",
         "Our university was born with a clear purpose: to unite science, faith, and wisdom to form leaders prepared to face the challenges of modern society.",
         "Here, you will find more than courses and subjects. You will find an environment of growth, dialogue, and discovery, where every student is encouraged to develop their intellectual, spiritual, and human potential.",
@@ -281,7 +281,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
         "May this be just the first chapter of an extraordinary story.",
       ],
       welcomePhrase: "Welcome to FUST.",
-      signatureTitle: "Florida University of Science and Theology",
+      signatureTitle: "France University of Science and Theology",
       signees: [
         { name: "Dr. Arthur Pendelton", role: "President" },
         { name: "Dr. Clarice Vance", role: "Academic Dean" },
@@ -329,10 +329,10 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       title: "Great journeys begin with a single step.",
       subtitle: "Today, that step was taken.",
       welcomePhrase: "Welcome to FUST.",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
     },
     footer: {
-      allRightsReserved: "© 2026 Florida University of Science and Theology. All rights reserved.",
+      allRightsReserved: "© 2026 France University of Science and Theology. All rights reserved.",
       officialWebsite: "Official Website",
       privacyPolicy: "Privacy Policy",
       contact: "Support Contact",
@@ -340,11 +340,11 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
   },
   es: {
     header: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       experience: "CEREMONIA DE BIENVENIDA",
     },
     hero: {
-      eyebrow: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      eyebrow: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       title: "Su próximo capítulo comienza aquí.",
       subtitle: "Hoy comienza más que una nueva etapa académica. Comienza un viaje de conocimiento, propósito y transformación.",
       button: "Comenzar mi viaje",
@@ -389,7 +389,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
     },
     envelope: {
       label: "Un mensaje para usted",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
       clickToOpen: "Presione para abrir",
       loading: "Abriendo sobre...",
       audioToggle: "Activar experiencia sonora",
@@ -397,11 +397,11 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       audioOff: "Audio: Apagado",
     },
     letter: {
-      university: "FLORIDA UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
       salutationDefault: "Estimado(a) estudiante,",
       salutationPersonalized: (name: string) => `Estimado(a) ${name},`,
       paragraphs: [
-        "Es con gran alegría que le damos la bienvenida a la Florida University of Science and Theology.",
+        "Es con gran alegría que le damos la bienvenida a la France University of Science and Theology.",
         "Hoy marca el comienzo de un nuevo viaje en su vida académica y personal. Al ingresar a la FUST, usted pasa a formar parte de una comunidad internacional dedicada al conocimiento, la reflexión y la transformación del mundo a través de la educación.",
         "Nuestra universidad nació con un propósito claro: unir ciencia, fe y sabiduría para formar líderes preparados para enfrentar los desafíos de la sociedad moderna.",
         "Aquí encontrará más que cursos y materias. Encontrará un ambiente de crecimiento, diálogo y descubrimiento, donde cada estudiante es alentado a desarrollar su potencial intelectual, espiritual y humano.",
@@ -409,7 +409,7 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
         "Que este sea solo el primer capítulo de una historia extraordinaria.",
       ],
       welcomePhrase: "Bienvenido(a) a la FUST.",
-      signatureTitle: "Florida University of Science and Theology",
+      signatureTitle: "France University of Science and Theology",
       signees: [
         { name: "Dr. Arthur Pendelton", role: "Presidente" },
         { name: "Dra. Clarice Vance", role: "Decana Académica" },
@@ -457,13 +457,14 @@ export const locales: Record<"pt" | "en" | "es", LocaleContent> = {
       title: "Los grandes viajes comienzan con un primer paso.",
       subtitle: "Hoy, ese paso ha sido dado.",
       welcomePhrase: "Bienvenido(a) a la FUST.",
-      university: "Florida University of Science and Theology",
+      university: "France University of Science and Theology",
     },
     footer: {
-      allRightsReserved: "© 2026 Florida University of Science and Theology. Todos los derechos reservados.",
+      allRightsReserved: "© 2026 France University of Science and Theology. Todos los derechos reservados.",
       officialWebsite: "Sitio Web Oficial",
       privacyPolicy: "Política de Privacidad",
       contact: "Contacto de Soporte",
     },
   },
 };
+

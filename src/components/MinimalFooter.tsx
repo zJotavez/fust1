@@ -19,7 +19,7 @@ export default function MinimalFooter({ content }: MinimalFooterProps) {
               FUST UNIVERSITY
             </span>
             <span className="text-[9px] text-white/50 block font-light">
-              Florida University of Science and Theology
+              France University of Science and Theology
             </span>
           </div>
         </div>
@@ -63,3 +63,4 @@ export default function MinimalFooter({ content }: MinimalFooterProps) {
     </footer>
   );
 }
+
