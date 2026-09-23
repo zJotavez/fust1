@@ -6,7 +6,7 @@ import HorizontalLoop from "./HorizontalLoop";
 interface LetterIntroductionProps {
   content: LocaleContent;
   onFocusEnvelope: () => void;
-  currentLang: "pt" | "en" | "es";
+  currentLang: "pt" | "en" | "fr";
 }
 
 export default function LetterIntroduction({
@@ -16,7 +16,7 @@ export default function LetterIntroduction({
 }: LetterIntroductionProps) {
   const getAnticipationLoopTexts = () => {
     if (currentLang === "en") return ["WELCOME TO FUST UNIVERSITY", "YOUR ADMISSIONS STATUS IS READY", "EXCELLENCE • SCIENCE • THEOLOGY"];
-    if (currentLang === "es") return ["BIENVENIDO A LA UNIVERSIDAD FUST", "SU ESTADO DE ADMISIÓN ESTÁ LISTO", "EXCELENCIA • CIENCIA • TEOLOGÍA"];
+    if (currentLang === "fr") return ["BIENVENIDO A LA UNIVERSIDAD FUST", "SU ESTADO DE ADMISIÓN ESTÁ LISTO", "EXCELENCIA • CIENCIA • TEOLOGÍA"];
     return ["BEM-VINDO À FUST UNIVERSITY", "SEU STATUS DE ADMISSÃO ESTÁ PRONTO", "EXCELÊNCIA • CIÊNCIA • TEOLOGIA"];
   };
 
@@ -99,3 +99,4 @@ export default function LetterIntroduction({
     </section>
   );
 }
+

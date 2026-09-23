@@ -10,7 +10,7 @@ interface InteractiveEnvelopeProps {
   onReadComplete: () => void;
   letterState: LetterState;
   setLetterState: (state: LetterState) => void;
-  currentLang: "pt" | "en" | "es";
+  currentLang: "pt" | "en" | "fr";
 }
 
 export default function InteractiveEnvelope({
@@ -54,19 +54,19 @@ export default function InteractiveEnvelope({
   // Localized envelope loop text helpers
   const getTopLoopTexts = () => {
     if (currentLang === "en") return ["WELCOME TO FUST UNIVERSITY", "YOUR ACADEMIC JOURNEY BEGINS HERE", "EXCELLENCE • FAITH • SCIENCE"];
-    if (currentLang === "es") return ["BIENVENIDO A LA UNIVERSIDAD FUST", "SU VIAJE ACADÉMICO COMIENZA AQUÍ", "EXCELENCIA • FE • CIENCIA"];
+    if (currentLang === "fr") return ["BIENVENIDO A LA UNIVERSIDAD FUST", "SU VIAJE ACADÉMICO COMIENZA AQUÍ", "EXCELENCIA • FE • CIENCIA"];
     return ["BEM-VINDO À FUST UNIVERSITY", "SUA JORNADA ACADÊMICA COMEÇA AQUI", "EXCELÊNCIA • FÉ • CIÊNCIA"];
   };
 
   const getBottomLoopTexts = () => {
     if (currentLang === "en") return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "GLOBAL EDUCATION WITHOUT BORDERS", "SHAPING FUTURE LEADERS"];
-    if (currentLang === "es") return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCACIÓN GLOBAL SIN FRONTERAS", "FORMANDO LÍDERES DEL MAÑANA"];
+    if (currentLang === "fr") return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCACIÓN GLOBAL SIN FRONTERAS", "FORMANDO LÍDERES DEL MAÑANA"];
     return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCAÇÃO GLOBAL SEM FRONTEIRAS", "FORMANDO LÍDERES DO AMANHÃ"];
   };
 
   const getSaveLetterLabel = () => {
     if (currentLang === "en") return "Close Letter";
-    if (currentLang === "es") return "Cerrar Carta";
+    if (currentLang === "fr") return "Cerrar Carta";
     return "Fechar Carta";
   };
 
@@ -221,4 +221,5 @@ export default function InteractiveEnvelope({
     </section>
   );
 }
+
 

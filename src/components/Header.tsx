@@ -2,8 +2,8 @@ import { Volume2, VolumeX } from "lucide-react";
 import { LocaleContent } from "../data/welcome-content";
 
 interface HeaderProps {
-  currentLang: "pt" | "en" | "es";
-  onChangeLang: (lang: "pt" | "en" | "es") => void;
+  currentLang: "pt" | "en" | "fr";
+  onChangeLang: (lang: "pt" | "en" | "fr") => void;
   content: LocaleContent;
   isAudioOn: boolean;
   onToggleAudio: () => void;
@@ -45,7 +45,7 @@ export default function Header({
 
         {/* Language controls capsule */}
         <div className="flex items-center space-x-1 bg-fust-deep/75 backdrop-blur-md p-1 rounded-full border border-fust-gold/25 shadow-md">
-          {(["pt", "en", "es"] as const).map((lang) => (
+          {(["pt", "en", "fr"] as const).map((lang) => (
             <button
               key={lang}
               onClick={() => onChangeLang(lang)}

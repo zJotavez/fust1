@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import { Volume2, VolumeX, Play } from "lucide-react";
 
 interface KnowledgeInMotionProps {
-  currentLang: "pt" | "en" | "es";
+  currentLang: "pt" | "en" | "fr";
 }
 
 interface PuzzleItem {
@@ -176,3 +176,4 @@ export default function KnowledgeInMotion({ currentLang }: KnowledgeInMotionProp
     </section>
   );
 }
+

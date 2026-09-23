@@ -10,7 +10,7 @@ export interface StudentWelcomeData {
   program?: string;
   level?: string;
   startDate?: string;
-  language?: "pt" | "en" | "es";
+  language?: "pt" | "en" | "fr";
 }
 
 export interface NavigationStep {

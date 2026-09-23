@@ -12,7 +12,7 @@ import { LetterState, StudentWelcomeData } from "./types";
 import { startAmbientAudio, stopAmbientAudio } from "./utils/audio";
 
 export default function App() {
-  const [currentLang, setCurrentLang] = useState<"pt" | "en" | "es">("pt");
+  const [currentLang, setCurrentLang] = useState<"pt" | "en" | "fr">("pt");
   const [isAudioOn, setIsAudioOn] = useState(false);
   const [letterState, setLetterState] = useState<LetterState>("closed");
   const [hasReadLetter, setHasReadLetter] = useState(false);
@@ -33,8 +33,8 @@ export default function App() {
       const langParam = params.get("lang") || params.get("language") || params.get("idioma") || "";
 
       // Safe cast language
-      let language: "pt" | "en" | "es" = "pt";
-      if (langParam === "en" || langParam === "es") {
+      let language: "pt" | "en" | "fr" = "pt";
+      if (langParam === "en" || langParam === "fr") {
         language = langParam;
         setCurrentLang(langParam);
       }
@@ -66,7 +66,7 @@ export default function App() {
     setIsAudioOn((prev) => !prev);
   };
 
-  const handleLanguageChange = (lang: "pt" | "en" | "es") => {
+  const handleLanguageChange = (lang: "pt" | "en" | "fr") => {
     setCurrentLang(lang);
     setStudentData((prev) => ({ ...prev, language: lang }));
   };
