@@ -84,11 +84,11 @@ export interface LocaleContent {
 export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
   pt: {
     header: {
-      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       experience: "CERIMÔNIA DE BOAS-VINDAS",
     },
     hero: {
-      eyebrow: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      eyebrow: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       title: "Seu próximo capítulo começa aqui.",
       subtitle: "Hoje você inicia mais do que uma nova etapa acadêmica. Inicia uma jornada de conhecimento, propósito e transformação.",
       button: "Começar minha jornada",
@@ -141,7 +141,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
       audioOff: "Áudio: Desligado",
     },
     letter: {
-      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       salutationDefault: "Caro(a) estudante,",
       salutationPersonalized: (name: string) => `Caro(a) ${name},`,
       paragraphs: [
@@ -176,7 +176,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Conheça seu ambiente acadêmico",
           description: "Explore as ferramentas, plataformas e recursos que farão parte da sua rotina de estudos.",
           buttonText: "Acessar ambiente acadêmico",
-          link: "https://canvas.fust.edu",
+          link: "https://canvas.fustuniversity.com",
         },
         {
           id: "step-2",
@@ -184,7 +184,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Organize sua jornada",
           description: "Confira suas informações acadêmicas, calendário e orientações iniciais.",
           buttonText: "Ver orientações",
-          link: "https://fust.edu/orientations",
+          link: "https://fustuniversity.com/orientations",
         },
         {
           id: "step-3",
@@ -192,7 +192,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Conecte-se com a FUST",
           description: "Conheça nossos canais oficiais de comunicação e suporte.",
           buttonText: "Conhecer canais oficiais",
-          link: "https://fust.edu/contact",
+          link: "https://fustuniversity.com/contact",
         },
       ],
     },
@@ -212,11 +212,11 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
   },
   en: {
     header: {
-      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       experience: "WELCOME CEREMONY",
     },
     hero: {
-      eyebrow: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      eyebrow: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       title: "Your next chapter begins here.",
       subtitle: "Today you begin more than a new academic stage. You start a journey of knowledge, purpose, and transformation.",
       button: "Begin my journey",
@@ -269,7 +269,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
       audioOff: "Audio: Off",
     },
     letter: {
-      university: "France UNIVERSITY OF SCIENCE AND THEOLOGY",
+      university: "FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY",
       salutationDefault: "Dear student,",
       salutationPersonalized: (name: string) => `Dear ${name},`,
       paragraphs: [
@@ -304,7 +304,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Get to know your academic portal",
           description: "Explore the tools, platforms, and resources that will be part of your study routine.",
           buttonText: "Access academic portal",
-          link: "https://canvas.fust.edu",
+          link: "https://canvas.fustuniversity.com",
         },
         {
           id: "step-2",
@@ -312,7 +312,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Organize your route",
           description: "Check your academic details, calendar, and initial guidelines.",
           buttonText: "See guidelines",
-          link: "https://fust.edu/orientations",
+          link: "https://fustuniversity.com/orientations",
         },
         {
           id: "step-3",
@@ -320,7 +320,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Connect with FUST",
           description: "Find our official communication and support channels.",
           buttonText: "Explore channels",
-          link: "https://fust.edu/contact",
+          link: "https://fustuniversity.com/contact",
         },
       ],
     },
@@ -432,7 +432,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Découvrez votre portail académique",
           description: "Explorez les outils, plateformes et ressources qui feront partie de votre routine d'étude.",
           buttonText: "Accéder au portail académique",
-          link: "https://canvas.fust.edu",
+          link: "https://canvas.fustuniversity.com",
         },
         {
           id: "step-2",
@@ -440,7 +440,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Organisez votre parcours",
           description: "Consultez vos données académiques, votre calendrier et les orientations initiales.",
           buttonText: "Voir les orientations",
-          link: "https://fust.edu/orientations",
+          link: "https://fustuniversity.com/orientations",
         },
         {
           id: "step-3",
@@ -448,7 +448,7 @@ export const locales: Record<"pt" | "en" | "fr", LocaleContent> = {
           title: "Connectez-vous avec FUST",
           description: "Découvrez nos canaux de communication et d'assistance officiels.",
           buttonText: "Explorer les canaux",
-          link: "https://fust.edu/contact",
+          link: "https://fustuniversity.com/contact",
         },
       ],
     },

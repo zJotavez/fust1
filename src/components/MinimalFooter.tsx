@@ -33,7 +33,7 @@ export default function MinimalFooter({ content }: MinimalFooterProps) {
           {/* Links Row */}
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2 text-[9px] font-mono tracking-wider uppercase font-bold text-fust-gold-light">
             <a
-              href="https://fust.edu"
+              href="https://fustuniversity.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white flex items-center space-x-1 transition-colors duration-300"
@@ -42,7 +42,7 @@ export default function MinimalFooter({ content }: MinimalFooterProps) {
               <ExternalLink className="w-2.5 h-2.5 text-fust-gold" />
             </a>
             <a
-              href="https://fust.edu/privacy"
+              href="https://fustuniversity.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors duration-300"
@@ -50,7 +50,7 @@ export default function MinimalFooter({ content }: MinimalFooterProps) {
               {content.footer.privacyPolicy}
             </a>
             <a
-              href="https://fust.edu/support"
+              href="https://fustuniversity.com/support"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors duration-300"

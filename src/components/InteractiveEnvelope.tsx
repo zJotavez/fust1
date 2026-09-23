@@ -59,9 +59,9 @@ export default function InteractiveEnvelope({
   };
 
   const getBottomLoopTexts = () => {
-    if (currentLang === "en") return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "GLOBAL EDUCATION WITHOUT BORDERS", "SHAPING FUTURE LEADERS"];
-    if (currentLang === "fr") return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCACIÓN GLOBAL SIN FRONTERAS", "FORMANDO LÍDERES DEL MAÑANA"];
-    return ["France UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCAÇÃO GLOBAL SEM FRONTEIRAS", "FORMANDO LÍDERES DO AMANHÃ"];
+    if (currentLang === "en") return ["FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY", "GLOBAL EDUCATION WITHOUT BORDERS", "SHAPING FUTURE LEADERS"];
+    if (currentLang === "fr") return ["FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCACIÓN GLOBAL SIN FRONTERAS", "FORMANDO LÍDERES DEL MAÑANA"];
+    return ["FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY", "EDUCAÇÃO GLOBAL SEM FRONTEIRAS", "FORMANDO LÍDERES DO AMANHÃ"];
   };
 
   const getSaveLetterLabel = () => {
@@ -173,10 +173,10 @@ export default function InteractiveEnvelope({
                   <span>2026</span>
                 </div>
                 <h4 className="text-[10px] tracking-[0.25em] font-semibold text-fust-blue font-sans uppercase block text-center">
-                  France UNIVERSITY OF SCIENCE AND THEOLOGY
+                  FRANCE UNIVERSITY OF SCIENCE AND THEOLOGY
                 </h4>
                 <div className="text-[8px] text-fust-slate tracking-[0.1em] font-mono uppercase font-semibold">
-                  Office of Admissions • France, USA
+                  Office of Admissions • France
                 </div>
               </div>
 
