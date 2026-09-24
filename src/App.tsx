@@ -141,7 +141,7 @@ export default function App() {
       </main>
 
       {/* 9. Minimal Editorial Footer */}
-      <MinimalFooter content={content} />
+      <MinimalFooter content={content} currentLang={currentLang} />
     </div>
   );
 }
